@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CXXFLAGS = -std=c++20 -Wall -Wextra -O2
 
 # Find all problem folders
 PROBLEM_DIRS := $(wildcard [1-9]*00)
@@ -48,5 +48,5 @@ list:
 # Clean up all compiled executables
 clean:
 	@echo "Cleaning up..."
-	@rm -f $(PROBLEM_NUMS)
+	@rm -f *.exe
 	@echo "Done."
